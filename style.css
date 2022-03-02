@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1;
+  min-width: 300px;
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  width: 100%;
+  height: 5vh;
+  background-color: rgb(235, 223, 223);
+  opacity: 0.7;
+  padding: 2px;
+  position: fixed;
+  z-index: 1;
+}
+.navbar a {
+  display: block;
+  float: right;
+  margin-right: 20px;
+  text-decoration: none;
+  color: rgba(63, 62, 62, 0.932);
+}
+.links {
+  margin-right: 5%;
+  /* padding-top: 5px; */
+  justify-content: center;
+  align-items: center;
+}
+#logo {
+  width: 10%;
+  height: 5vh;
+  position: relative;
+  margin-left: 2%;
+  opacity: 1;
+}
+#navbar {
+  width: 80%;
+  height: 8vh;
+  border: 1px solid blue;
+  border-radius: 5px;
+  margin: -1vh;
+  margin-left: 10%;
+  position: absolute;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 4px 0 rgba(19, 17, 17, 0.2);
+}
+#navbar a {
+  float: right;
+  display: inline;
+  text-align: center;
+  width: 20%;
+  color: rgba(8, 8, 44, 0.77);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+#navbar a:hover {
+  color: rgba(0, 0, 0, 0.2);
+  text-decoration: underline;
+}
+#first-section {
+  padding-left: 0%;
+  max-width: 100%;
+  margin-top: 0;
+  background-color: rgb(163, 253, 253);
+}
+#first-section img {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 35%;
+  height: 100%;
+}
+#first-section article {
+  padding-top: 9vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 37%;
+  /* height: 5%; */
+  display: block;
+  line-height: 30px;
+}
+#first-section b {
+  color: blue;
+  font-weight: 900;
+  font-size: 33px;
+  margin: 1px;
+}
+#first-section p {
+  margin-top: 10px;
+  margin-bottom: 14px;
+  font-size: 23px;
+}
+#first-section a {
+  width: 30%;
+  position: relative;
+  background: linear-gradient(45deg, blue, dodgerblue);
+  color: antiquewhite;
+  margin-top: 6px;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 3px;
+}
+#nd-section {
+  margin-top: 70px;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+}
+header {
+  min-width: 20%;
+  text-align: center;
+  margin-top: 0%;
+  font-size: 30px;
+}
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  margin: 0px 30px 0px 30px;
+  height: 580px;
+}
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 4px 8px 0 rgba(54, 54, 54, 0.2);
+  transition: 0.3s;
+  width: 32%;
+  height: 180px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card img {
+  width: 75px;
+  height: 75px;
+  padding: 1px 12px;
+  border-radius: 50%;
+}
+.card h4 {
+  font-size: 25px;
+}
+.container {
+  padding: 5px;
+  margin-top: 0px;
+  padding-left: 15px;
+}
+.container p {
+  overflow: hidden;
+  font-size: 20px;
+  padding-top: 1px;
+}
+#rd-section {
+  height: 330px;
+  align-items: center;
+  margin-top: 20px;
+  background-color: rgb(231, 232, 233);
+}
+.connect {
+  width: 37%;
+  display: block;
+  margin: 12px 0px 12px 2%;
+}
+.connect h2 {
+  font-size: 33px;
+}
+.connect p {
+  font-size: 20px;
+}
+.connect ul {
+  list-style: none;
+}
+li {
+  height: 20px;
+}
+.connect a {
+  font-weight: bold;
+  color: black;
+}
+.rectangle {
+  width: 58%;
+  margin: 1% 2% 1% 0%;
+  background-color: rgb(114, 110, 110);
+  border-radius: 5px;
+}
+.team-cards {
+  display: flex;
+  flex-direction: column;
+  height: 370px;
+}
+.meet {
+  max-height: 20%;
+  margin-top: 1%;
+}
+.meet h2 {
+  font-size: 25px;
+  text-align: center;
+}
+.meet p {
+  text-align: center;
+  font-size: 18px;
+}
+#card {
+  transition: 0.3s;
+  width: 23%;
+  height: 100%;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+.circle {
+  width: 100%;
+  height: 211px;
+  background: rgb(164, 168, 168);
+  border-radius: 50%;
+  margin: auto;
+}
+.people {
+  margin: 10px 5% 0 5%;
+  display: flex;
+  justify-content: space-around;
+}
+#container {
+  padding: 10px;
+  margin-top: 0px;
+  text-align: center;
+}
+section h1 {
+  display: flex;
+  color: #fff;
+  text-align: center;
+  background-color: rgb(107, 102, 81);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 41px;
+}
+
+#last {
+  height: 60px;
+}
+#last h1 {
+  background: rgb(212, 208, 202);
+}
+/* MEDIA QUERIES */
+
+@media (max-width: 360px) {
+  #navbar {
+    font-size: 11px;
+    text-align: center;
+  }
+  #first-section a,
+  p {
+    font-size: 12px;
+    margin-top: 2px;
+  }
+
+  .card {
+    height: 63px;
+    width: 82px;
+  }
+  section h1 {
+    font-size: 40px;
+  }
+  section {
+    height: 150px;
+  }
+  #first-section b {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  header {
+    font-size: 20px;
+    margin-top: 10%;
+  }
+  #cards {
+    margin: 0px 10px 0px 0px;
+  }
+  .card img {
+    width: 22px;
+    height: 22px;
+    padding: 1px 12px;
+  }
+  .card h4 {
+    font-size: 10px;
+  }
+  .container {
+    padding: 5px;
+    margin-top: 0px;
+    padding-left: 15px;
+  }
+  .container p {
+    font-size: 8px;
+  }
+  #nd-section {
+    margin-top: 50px;
+    height: 198px;
+  }
+  .connect h2 {
+    font-size: 16px;
+  }
+  .connect p {
+    font-size: 9px;
+  }
+  .connect a {
+    font-size: 10px;
+  }
+  .connect {
+    margin: 9px 0px 9px 2%;
+    padding: 1px;
+  }
+  li {
+    height: 15px;
+  }
+  .rectangle {
+    height: 130px;
+  }
+  #rd-section {
+    height: 150px;
+    align-items: center;
+  }
+  .meet {
+    margin: 0px;
+    height: 50px;
+  }
+  .meet h2 {
+    font-size: 9px;
+  }
+  .meet p {
+    font-size: 6px;
+  }
+  #card {
+    height: 150px;
+  }
+  .circle {
+    height: 85px;
+  }
+  #container {
+    padding: 4px;
+    margin-top: 1px;
+  }
+  #container h2,
+  #container h5,
+  #container p {
+    font-size: 9px;
+  }
+  .people {
+    margin: 0px;
+  }
+  /* Create media queries for font to adjust on small screens
+  work on widths
+  */
+}
+@media (max-width: 320px) {
+  .card {
+    height: 58px;
+    width: 73px;
+  }
+  .card h4 {
+    font-size: 7px;
+  }
+  .container p {
+    font-size: 6px;
+  }
+}
+@media (max-width: 415px) {
+  #cards {
+    height: 200px;
+  }
+  .container {
+    padding: 1px;
+    margin-top: 0px;
+    padding-left: 8px;
+  }
+  .card {
+    height: 31%;
+  }
+  .card img {
+    height: 25px;
+    width: 25px;
+    padding: 1px 8px;
+  }
+  .card h4 {
+    font-size: 7px;
+  }
+  .container p {
+    font-size: 6px;
+  }
+  #first-section a {
+    font-size: 9px;
+  }
+  #first-section p {
+    font-size: 11px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  #first-section b {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  #first-section {
+    height: 200px;
+  }
+  #first-section article {
+    line-height: 1;
+    padding-top: 6vh;
+  }
+  .meet {
+    margin: 0px;
+    height: 50px;
+  }
+  .meet h2 {
+    font-size: 9px;
+  }
+  .meet p {
+    font-size: 6px;
+  }
+  #card {
+    height: 150px;
+  }
+  .circle {
+    height: 85px;
+  }
+  #container {
+    padding: 4px;
+    margin-top: 1px;
+  }
+  #container h2,
+  #container h5,
+  #container p {
+    font-size: 9px;
+  }
+  .team-cards {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin-top: 20px;
+  }
+  .people {
+    margin: 0px;
+  }
+  .connect h2 {
+    font-size: 16px;
+  }
+  .connect p {
+    font-size: 9px;
+  }
+  .connect a {
+    font-size: 10px;
+  }
+  .connect {
+    margin: 9px 0px 9px 2%;
+    padding: 1px;
+  }
+  li {
+    height: 15px;
+  }
+  .rectangle {
+    height: 130px;
+  }
+  #rd-section {
+    height: 150px;
+    align-items: center;
+  }
+}
